@@ -1,7 +1,8 @@
 package main.com.chaoscube.algos;
 
 
-import main.com.chaoscube.algos.indie3.BinarySearch;
+import main.com.chaoscube.algos.indie.Stack;
+import main.com.chaoscube.algos.book.BinarySearch;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,10 +19,15 @@ public class algos {
 
         logger.info("Hello algos logger");
 
-        BinarySearchTest(args);
+        //BinarySearchTest(args);
+        StackTest(args);
     }
 
     public static void BinarySearchTest(String[] args) {
        BinarySearch.main(args);
+    }
+
+    public static void StackTest(String[] args) {
+        Stack.main(args);
     }
 }
