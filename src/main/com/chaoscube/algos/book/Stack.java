@@ -3,10 +3,12 @@ package main.com.chaoscube.algos.book;
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
+import java.util.Iterator;
+
 /**
  * Created by tom on 03/09/16.
  */
-public class Stack<Item> {
+public class Stack<Item> implements Iterable<Item> {
     private Node first; // top of stack
     private int N; // item count
 
@@ -55,6 +57,28 @@ public class Stack<Item> {
             }
 
             StdOut.println("(" + s.size() + " left on stack)");
+        }
+    }
+
+    public Iterator<Item> iterator(){
+        return new StackIterator();
+    }
+
+    private class StackIterator implements Iterator<Item> {
+        private Node current = first;
+
+        public boolean hasNext() {
+            return current != null;
+        }
+
+        public void remove() {
+            //Throw unsupported operation exception
+        }
+
+        public Item next() {
+            Item item = current.item;
+            current = current.next;
+            return item;
         }
     }
 }

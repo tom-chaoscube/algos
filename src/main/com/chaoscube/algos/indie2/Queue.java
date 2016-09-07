@@ -1,12 +1,12 @@
-package main.com.chaoscube.algos.indie;
+package main.com.chaoscube.algos.indie2;
 
 /**
- * Created by tom on 03/09/16.
+ * Created by tom on 05/09/16.
  */
 public class Queue<Item> {
-    private Node first; // least recent item
-    private Node last; // most recent item
-    private int N; // item count
+    private Node first; // least recently added item
+    private Node last; // most recently added item
+    private int N;
 
     private class Node {
         Item item;
@@ -21,13 +21,13 @@ public class Queue<Item> {
         return N;
     }
 
-    public void enqueue(Item item){
+    public void enqueue(Item item) {
         Node oldlast = last;
         last = new Node();
         last.item = item;
         last.next = null;
 
-        if(isEmpty()) {
+        if (isEmpty()) {
             first = last;
         }
         else {
@@ -39,7 +39,7 @@ public class Queue<Item> {
 
     public Item dequeue() {
         Item item = first.item;
-            first = first.next;
+        first = first.next;
         N--;
 
         if(isEmpty()) {
