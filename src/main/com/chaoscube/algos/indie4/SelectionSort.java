@@ -1,17 +1,17 @@
-package main.com.chaoscube.algos.indie;
+package main.com.chaoscube.algos.indie4;
 
 import main.com.chaoscube.algos.Sort;
 
 /**
- * Created by tom on 07/09/16.
+ * Created by tom on 08/09/16.
  */
 public class SelectionSort extends Sort {
-
     public void sort(Comparable[] a) {
         int N = a.length;
         for (int i=0; i<N; i++) {
             int min = i;
-            for (int j=i+1; j<N; j++) {
+
+            for(int j=i+1; j<N; j++) {
                 if(less(a[j], a[min])) {
                     min = j;
                 }
