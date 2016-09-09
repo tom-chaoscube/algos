@@ -2,7 +2,7 @@ package main.com.chaoscube.algos;
 
 
 import edu.princeton.cs.introcs.StdIn;
-import main.com.chaoscube.algos.indie3.QuickSort;
+import main.com.chaoscube.algos.indie4.QuickSort;
 import main.com.chaoscube.algos.indie2.MergeSort;
 import main.com.chaoscube.algos.indie.ShellSort;
 import main.com.chaoscube.algos.indie3.InsertionSort;
