@@ -12,14 +12,14 @@ public class QuickSort extends Sort {
          sort(a, 0, a.length - 1);
      }
 
-     private static void sort(Comparable[] a, int lo, int hi) {
+     private  void sort(Comparable[] a, int lo, int hi) {
          if (hi<=lo) return;
          int j = partition(a, lo, hi);
          sort(a, lo, j-1);
          sort(a,j+1, hi);
      }
 
-     private static int partition(Comparable[] a, int lo, int hi){
+     private  int partition(Comparable[] a, int lo, int hi){
          //Partition into a[lo..j-1] , a[j], a[j+1..hi] and return j
          int i = lo; //left scan index
          int j  = hi + 1; //right scan index

@@ -2,12 +2,14 @@ package main.com.chaoscube.algos;
 
 
 import edu.princeton.cs.introcs.StdIn;
+import main.com.chaoscube.algos.book.HeapSort;
+import main.com.chaoscube.algos.book.TopM;
 import main.com.chaoscube.algos.indie4.QuickSort;
 import main.com.chaoscube.algos.indie2.MergeSort;
 import main.com.chaoscube.algos.indie.ShellSort;
 import main.com.chaoscube.algos.indie3.InsertionSort;
 import main.com.chaoscube.algos.indie4.SelectionSort;
-import main.com.chaoscube.algos.indie.WeightedQuickUnionUF;
+import main.com.chaoscube.algos.week2.indie.WeightedQuickUnionUF;
 import main.com.chaoscube.algos.indie.Stack;
 import main.com.chaoscube.algos.book.BinarySearch;
 
@@ -34,7 +36,9 @@ public class algos {
         //InsertionSortTest(args);
         //ShellSortTest(args);
         //MergeSortTest(args);
-        QuickSortTest(args);
+        //QuickSortTest(args);
+        HeapSortTest(args);
+        //TopMTest(args);
     }
 
     public static void BinarySearchTest(String[] args) {
@@ -70,5 +74,16 @@ public class algos {
     public static void QuickSortTest(String[] args){
         QuickSort sorter = new QuickSort();
         sorter.sortTest(args);
+    }
+
+    public static void HeapSortTest(String[] args) {
+        HeapSort sorter = new HeapSort();
+        sorter.sortTest(args);
+    }
+
+    public static void TopMTest(String[] args){
+        //MaxPQ test
+        TopM topm = new TopM();
+        topm.topMTest(args);
     }
 }

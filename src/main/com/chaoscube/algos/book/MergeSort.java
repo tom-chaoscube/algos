@@ -9,7 +9,7 @@ public class MergeSort extends Sort {
 
     private static Comparable[] aux;
 
-    private static void merge(Comparable[] a, int lo, int mid, int hi) {
+    private  void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi]
         int i = lo;
         int j = mid+1;
