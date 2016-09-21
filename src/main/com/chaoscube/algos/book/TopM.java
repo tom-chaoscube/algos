@@ -1,5 +1,6 @@
 package main.com.chaoscube.algos.book;
 
+import main.com.chaoscube.algos.week2.indie2.MaxPQ;
 import edu.princeton.cs.algorithms.Transaction;
 import edu.princeton.cs.introcs.In;
 import edu.princeton.cs.introcs.StdIn;

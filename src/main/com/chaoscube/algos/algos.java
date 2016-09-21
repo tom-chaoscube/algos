@@ -2,6 +2,7 @@ package main.com.chaoscube.algos;
 
 
 import edu.princeton.cs.introcs.StdIn;
+import main.com.chaoscube.algos.book.FrequencyCounter;
 import main.com.chaoscube.algos.book.HeapSort;
 import main.com.chaoscube.algos.book.TopM;
 import main.com.chaoscube.algos.indie4.QuickSort;
@@ -37,8 +38,9 @@ public class algos {
         //ShellSortTest(args);
         //MergeSortTest(args);
         //QuickSortTest(args);
-        HeapSortTest(args);
+        //HeapSortTest(args);
         //TopMTest(args);
+        STTest(args);
     }
 
     public static void BinarySearchTest(String[] args) {
@@ -85,5 +87,10 @@ public class algos {
         //MaxPQ test
         TopM topm = new TopM();
         topm.topMTest(args);
+    }
+
+    public static void STTest(String[] args){
+        FrequencyCounter fqc = new FrequencyCounter();
+        fqc.main(args);
     }
 }
